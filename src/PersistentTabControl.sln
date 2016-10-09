@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersistentTabControl", "PersistentTabControl\PersistentTabControl.csproj", "{354F6E89-6360-4D20-AB0B-CAC12412BF74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{AA85BF23-6BB9-4A98-9100-580062CCD73D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveSelectedItem", "Tests\RemoveSelectedItem\RemoveSelectedItem.csproj", "{9B901C70-EEF8-4425-9593-EABF513D3D55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataContextOfHiddenTabs", "Tests\DataContextOfHiddenTabs\DataContextOfHiddenTabs.csproj", "{97CD4BD9-63E0-4FD5-843A-82F65DC400CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{354F6E89-6360-4D20-AB0B-CAC12412BF74}.Debug|x86.ActiveCfg = Debug|x86
+		{354F6E89-6360-4D20-AB0B-CAC12412BF74}.Debug|x86.Build.0 = Debug|x86
+		{354F6E89-6360-4D20-AB0B-CAC12412BF74}.Release|x86.ActiveCfg = Release|x86
+		{354F6E89-6360-4D20-AB0B-CAC12412BF74}.Release|x86.Build.0 = Release|x86
+		{9B901C70-EEF8-4425-9593-EABF513D3D55}.Debug|x86.ActiveCfg = Debug|x86
+		{9B901C70-EEF8-4425-9593-EABF513D3D55}.Debug|x86.Build.0 = Debug|x86
+		{9B901C70-EEF8-4425-9593-EABF513D3D55}.Release|x86.ActiveCfg = Release|x86
+		{9B901C70-EEF8-4425-9593-EABF513D3D55}.Release|x86.Build.0 = Release|x86
+		{97CD4BD9-63E0-4FD5-843A-82F65DC400CA}.Debug|x86.ActiveCfg = Debug|x86
+		{97CD4BD9-63E0-4FD5-843A-82F65DC400CA}.Debug|x86.Build.0 = Debug|x86
+		{97CD4BD9-63E0-4FD5-843A-82F65DC400CA}.Release|x86.ActiveCfg = Release|x86
+		{97CD4BD9-63E0-4FD5-843A-82F65DC400CA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9B901C70-EEF8-4425-9593-EABF513D3D55} = {AA85BF23-6BB9-4A98-9100-580062CCD73D}
+		{97CD4BD9-63E0-4FD5-843A-82F65DC400CA} = {AA85BF23-6BB9-4A98-9100-580062CCD73D}
+	EndGlobalSection
+EndGlobal

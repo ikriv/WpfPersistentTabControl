@@ -1,0 +1,30 @@
+﻿<Window x:Class="DataContextOfHiddenTabs.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ikriv="clr-namespace:IKriv.Windows.Controls.Behaviors"
+        xmlns:local="clr-namespace:DataContextOfHiddenTabs"
+        Title="MainWindow" Height="350" Width="525">
+    <DockPanel>
+        <ItemsControl ItemsSource="{Binding ControlList, Source={x:Static local:PlanetControlSpy.Instance}}"
+                      Padding="10"
+                      DockPanel.Dock="Right">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock>Control</TextBlock>
+                        <TextBlock Margin="5,0,0,0" Text="{Binding Key}" />
+                        <TextBlock Margin="5,0,0,0">Watches</TextBlock>
+                        <TextBlock Margin="5,0,0,0" Foreground="Red" Text="{Binding Value}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+        <TabControl Name="Tabby" ikriv:TabContent.IsCached="True">
+            <ikriv:TabContent.Template>
+                <DataTemplate>
+                    <local:PlanetControl PlanetName="{Binding}" />
+                </DataTemplate>
+            </ikriv:TabContent.Template>
+        </TabControl>
+    </DockPanel>
+</Window>
